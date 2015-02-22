@@ -1,9 +1,0 @@
-<?php
-
-echo exec('whoami');
-
-
-
-
-
-?>
