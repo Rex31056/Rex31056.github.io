@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300, 700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/radiobuttons.css" />
+  <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" type="text/css" href="css/main copy.css" />
+  <script src="js/modernizr.custom.js"></script>
+  <title>SIGMA: Match Input</title>
+</head>
+
+
+<!---------------------------TOP---------------------------->
+<body id = "bgautonomous" class="cbp-spmenu-push">
+  <div id="blackBar">
+    <div class = "wrapperz">
+      <button class = "buttonStyle" id = "showLeftPush">&#x3a3;</button>
+      <a href = "home.html" id = "hugeheader" >HOME</a><text id = "hugeheader">></text><text id = "hugeheader">MATCH INPUT</text>
+      <form action="insert.php" method="post" enctype="multipart/form-data">
+      </div>
+      <div id="myform">
+      <h2 id = "autonomous">GENERAL INFO</h2>
+      <p>
+      <h3 id = "question">MATCH NUMBER</h3>
+      <input  data-progression type="text" name="matchNumber" value="" placeholder="">
+      </p>
+      <p>
+      <h3 id = "question">TEAM NUMBER</h3>
+      <input  data-progression type="text" name="teamNumber" value="" placeholder="">
+      </p>
+    </div>
+    <div id="myform">
+      <div id="column">
+      <p>
+      <h2 id = "autonomous">AUTONOMOUS</h2>
+      <div id="formm">
+          <p>
+            <h3 id = "question">MOBILITY INTO AUTOZONE?</h3>
+          <label class="radio" style:"display:inline-block;">
+            <input id="radio1" type="radio" name="autoMobility" value="1"/>
+            <span class="outer"><span class="inner"></span></span>YES</label>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio2" type="radio" name="autoMobility" value="0"checked/>
+              <span class="outer"><span class="inner"></span></span>NO</label>
+            </p>
+          <p>
+            <h3 id = "question">MOVES YELLOW TOTE INTO AUTOZONE?</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="autoMovesYellow" value="1"/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="autoMovesYellow" value="0" checked/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+
+          <p>
+            <h3 id = "question">MOVES CONTAINER INTO AUTOZONE?</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="autoMovesContainer" value="1" checked/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="autoMovesContainer" value="0"/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+
+          <p>
+            <h3 id = "question">DOES IT STACK?</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="autoStacks" value="1" />
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="autoStacks" value="0" checked/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+
+          <p>
+            <h3 id = "question">MOVES STACK INTO AUTOZONE?</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="autoMovesStack" value="1" checked/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="autoMovesStack" value="0"/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+
+          <p>
+            <label for="">COMMENTS</label>
+            <textarea data-progression name="autoComments"  value="" placeholder=""></textarea>
+          </p>
+
+
+          <h2 id = "autonomous">TELEOPERATED</h2>
+          <p>
+            <h3 id = "question">MOBILITY</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="teleMobility" value="1" checked/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="teleMobility" value="0"/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+
+          <p>
+            <h3 id = "question">ABILITY TO HANDLE UPSIDE DOWN TOTES</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="teleUpsideDown" value="1"/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="teleUpsideDown" value="0"checked/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+          </p>
+          <p>
+            <h3 id = "question">NUMBER OF TOTES</h3>
+            <input  data-progression type="text" name="teleTotes" value="" placeholder="">
+          </p>
+          <p>
+            <h3 id = "question">NUMBER OF TRIPS</h3>
+            <input  data-progression type="text" name="teleTrips" value="" placeholder="">
+          </p>
+            <h3 id = "question">NUMBER OF BINS</h3>
+            <input  data-progression type="text" name="teleBins" value="" placeholder="">
+          </p>
+          </p>
+            <h3 id = "question">NUMBER OF NOODLES IN BINS</h3>
+            <input  data-progression type="text" name="teleNoodles" value="" placeholder="">
+          </p>
+          <p>
+            <h3 id = "question">BIN LEVEL</h3>
+            <input  data-progression type="text" name="teleBinLevel" value="" placeholder="">
+          </p>
+          <p>
+            <h3 id = "question">TOTAL NUMBER OF POINTS</h3>
+            <input  data-progression type="text" name="telePoints" value="" placeholder="">
+          </p>
+          <p>
+            <h3 id = "question">NUMBER OF TIMES STACKED</h3>
+            <input  data-progression type="text" name="teleStackedTimes" value="" placeholder ="">
+          </p>
+          <p>
+            <h3 id = "question">DRIVER SKILL</h3>
+            <div style="position: relative; ">
+              <div>
+                <input type="text" id="range" name="teleDriverSkill" />
+              </div>
+            </div>
+          </p>
+
+          <p>
+            <h3 id = "question">ROBOT ABILITY </h3>
+            <div style="position: relative; ">
+              <div>
+                <input type="text" id="range2" name="teleRobotAbility" />
+              </div>
+            </div>
+          </p>
+
+          <p>
+            <h3 id = "question">CONTAINER OFF STEP (0 = NOTHING, 1 = TOOK ONE, ETC.)</h3>
+            <div style="position: relative; ">
+              <div>
+                <input type="text" id="range3" name="teleStep" />
+              </div>
+            </div>
+          </p>
+          <p>
+            <h3 id = "question">COOPERTITION STACK?</h3>
+          <label class="radio" style:"display:inline-block;">
+            <input id="radio1" type="radio" name="teleCStack" value="1"/>
+            <span class="outer"><span class="inner"></span></span>YES</label>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio2" type="radio" name="teleCStack" value="0"checked/>
+              <span class="outer"><span class="inner"></span></span>NO</label>
+            </p>
+            <p>
+              <h3 id = "question">COOPERTITION SET?</h3>
+            <label class="radio" style:"display:inline-block;">
+              <input id="radio1" type="radio" name="teleCSet" value="1"/>
+              <span class="outer"><span class="inner"></span></span>YES</label>
+              <label class="radio" style:"display:inline-block;">
+                <input id="radio2" type="radio" name="teleCSet" value="0"checked/>
+                <span class="outer"><span class="inner"></span></span>NO</label>
+              </p>
+          <p>
+            <h3 id = "question">COMMENTS</h3>
+            <textarea data-progression name="teleComments"  value="" placeholder=""></textarea>
+          </p>
+        </div>
+      </div>
+          <button class="btn btn-primary submit-button" type="submit" id = "submit">SUBMIT</button>
+
+      </form>
+    </div>
+
+
+
+    <!----------------------------QUESTIONS------------------------------------>
+
+
+    <!---------------------------------------SIDEBAR-------------------------------------------->
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+  <a href="home.html" style="text-decoration:none;">HOME</a>
+  <a href="backgroundinfo.html" style="text-decoration:none;">BACKGROUND INFO</a>
+  <a href="matchinput.html" style="text-decoration:none;">MATCH INPUT</a>
+  <a href = "overview.php" style="text-decoration:none;">OVERVIEW</a>
+</nav>
+
+    <!---------------------------------------JAVASCRIPT---------------------------------------->
+    <script src="js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+      menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+      menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+      menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+      showLeft = document.getElementById( 'showLeft' ),
+      showRight = document.getElementById( 'showRight' ),
+      showTop = document.getElementById( 'showTop' ),
+      showBottom = document.getElementById( 'showBottom' ),
+      showLeftPush = document.getElementById( 'showLeftPush' ),
+      showRightPush = document.getElementById( 'showRightPush' ),
+      body = document.body;
+
+      showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+      };
+      function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+
+      }
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+
+    <script>
+      $("#range").ionRangeSlider({
+        min: 0,
+        max: 5,
+        from: 0
+      });
+      $("#range2").ionRangeSlider({
+        min: 0,
+        max: 5,
+        from: 0
+      });
+      $("#range3").ionRangeSlider({
+        min: 0,
+        max: 5,
+        from: 0
+      });
+      $("#range4").ionRangeSlider({
+        min: 0,
+        max: 5,
+        from: 0
+      });
+
+      </script>
