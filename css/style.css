@@ -960,7 +960,7 @@ body{
   padding-top: 10px;
 } 
 
-p5{
+h10{
   color: lime; 
   font-family: "Courier";
   font-size: 20px;
@@ -971,11 +971,11 @@ p5{
   animation: type 4s steps(60, end); 
 }
 
-p5:nth-child(2){
+h10:nth-child(2){
   animation: type2 8s steps(60, end);
 }
 
-p5 a{
+h10 a{
   color: lime;
   text-decoration: none;
 }
