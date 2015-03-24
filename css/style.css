@@ -956,7 +956,7 @@
 			background: white;
 		} 
 body{
-  background: #000;
+  background: #fff;
   padding-top: 10px;
 } 
 
@@ -975,7 +975,7 @@ p:nth-child(2){
   animation: type2 8s steps(60, end);
 }
 
-p a{
+p5 a{
   color: lime;
   text-decoration: none;
 }
@@ -999,5 +999,5 @@ span{
 }
 
 ::selection{
-  background: black;
+  background: white;
 }
