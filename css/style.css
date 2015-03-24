@@ -66,7 +66,7 @@
 		margin: 0 0 2em 0;
 	}
 
-    h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6 {
 		color: #5b5b5b;
 		font-weight: 700;
 		letter-spacing: 0.125em;
@@ -76,7 +76,7 @@
 		text-align: center;
 	}
 
-     h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -111,7 +111,8 @@
 		border-left: solid 0.5em rgba(224, 224, 224, 0.75);
 		font-style: italic;
 		padding: 1em 0 1em 2em;
-	}
+	} 
+
 
 /* Section/Article */
 
@@ -185,7 +186,53 @@
 
 				header.major.last h2 {
 					margin-bottom: 1em;
-				}
+				} 
+body{
+  background: #fff;
+  padding-top: 10px;
+} 
+
+h8{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+h8:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+h8 a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: gold;
+}
 
 	footer {
 		text-align: center;
@@ -954,50 +1001,4 @@
 		#main header.major,
 		#main footer.major {
 			background: white;
-		} 
-body{
-  background: #fff;
-  padding-top: 10px;
-} 
-
-h10{
-  color: lime; 
-  font-family: "Courier";
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
-}
-
-h10:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-h10 a{
-  color: lime;
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: white;
-}
+		}
