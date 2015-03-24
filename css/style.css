@@ -988,14 +988,15 @@ h1 span {
     top:0;
     right:0;
     width:0;
-    background: white; /* same as background */
+    background: white; 
+    opacity: .4; /* same as background */
     border-left: .1em solid black;
     
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    -webkit-animation: typing 17s steps(20, end), /* # of steps = # of characters */
+    -webkit-animation: typing 17s steps(10, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
-    -moz-animation: typing 17s steps(20, end), /* # of steps = # of characters */
+    -moz-animation: typing 17s steps(10, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
 }
