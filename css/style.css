@@ -66,7 +66,7 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+    h2, h3, h4, h5, h6 {
 		color: #5b5b5b;
 		font-weight: 700;
 		letter-spacing: 0.125em;
@@ -76,7 +76,7 @@
 		text-align: center;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+     h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
@@ -954,4 +954,48 @@
 		#main header.major,
 		#main footer.major {
 			background: white;
-		}
+		} 
+@-webkit-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes typing {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+body { font-family: Consolas, monospace; }
+
+h1 { 
+    position: relative; 
+    float: left;
+    font-size:150%;
+}
+
+h1 span {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    background: white; /* same as background */
+    border-left: .1em solid black;
+    
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
