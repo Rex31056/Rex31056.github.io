@@ -1,3 +1,6 @@
+@import 'vars';
+@import 'mixins';
+
 /*
 	Directive by HTML5 UP
 	html5up.net | @n33co
@@ -7,25 +10,29 @@
 /* Basic */
 
 	hr {
-		border-top: solid 1px #cccccc;
+		border-top: solid 1px $color-border-ie;
 	}
-
+	
 	blockquote {
-		border-left: solid 0.5em #cccccc;
+		border-left: solid 0.5em $color-border-ie;
 	}
 
 /* Section/Article */
 
-	header.major {
-		border-color: #cccccc;
+	header {
+		&.major {
+			border-color: $color-border-ie;
+			
+			p {
+				border-top: solid 1px $color-border-ie;
+			}
+		}
 	}
 
-		header.major p {
-			border-top: solid 1px #cccccc;
+	footer {
+		&.major {
+			border-color: $color-border-ie;
 		}
-
-	footer.major {
-		border-color: #cccccc;
 	}
 
 /* Button */
@@ -35,15 +42,12 @@
 	input[type="button"],
 	.button {
 		position: relative;
-		-ms-behavior: url("css/ie/PIE.htc");
-	}
+		-ms-behavior: url('css/ie/PIE.htc');
 
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		input[type="button"].alt,
-		.button.alt {
-			border: solid 1px #cccccc;
+		&.alt {
+			border: solid 1px $color-border-ie;
 		}
+	}
 
 /* Form */
 
@@ -53,46 +57,45 @@
 	select,
 	textarea {
 		position: relative;
-		border: solid 1px #cccccc;
-		-ms-behavior: url("css/ie/PIE.htc");
+		border: solid 1px $color-border-ie;
+		-ms-behavior: url('css/ie/PIE.htc');
 	}
-
+	
 /* Image */
 
 	.image {
 		border: 0;
 		display: inline-block;
 		position: relative;
-	}
-
-		.image:after {
+		
+		&:after {
 			display: none;
 		}
+	}
 
 /* Box */
 
 	.box {
-		border: solid 1px #cccccc;
+		border: solid 1px $color-border-ie;
 	}
 
 /* Header */
 
 	#header {
-		background-image: url("../../images/header.jpg") !important;
+		background-image: url('../../images/header.jpg') !important;
 		background-size: cover !important;
 		background-position: scroll !important;
-		-ms-behavior: url("css/ie/backgroundsize.min.htc");
+		-ms-behavior: url('css/ie/backgroundsize.min.htc');
 		padding: 8em 0 !important;
-		color: white;
-	}
-
-		#header a {
+		color: $color-accent2-fg-bold;
+		
+		a {
 			color: inherit;
 		}
-
-		#header:before {
+		
+		&:before {
 			content: '';
-			background-image: url("../images/overlay.png");
+			background-image: url('../images/overlay.png');
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -101,25 +104,26 @@
 			display: block;
 			z-index: 0;
 		}
-
-		#header > * {
+		
+		> * {
 			position: relative;
 			z-index: 1;
 		}
-
-		#header .logo {
-			-ms-behavior: url("css/ie/PIE.htc");
+		
+		.logo {
+			-ms-behavior: url('css/ie/PIE.htc');
 		}
-
+	}
+	
 /* Footer */
 
 	#footer {
 		background-image: none !important;
 		margin-top: 0 !important;
 		padding: 4em 0 !important;
-		color: white;
+		color: $color-accent-fg-bold;
 	}
-
+	
 /* Main */
 
 	#main {
