@@ -231,7 +231,8 @@ span{
 }
 
 ::selection{
-  background: gold;
+  background: yellow; 
+    opacity: .5
 }
 
 	footer {
