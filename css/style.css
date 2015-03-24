@@ -113,7 +113,53 @@
 		padding: 1em 0 1em 2em;
 	} 
 
+body{
+  background: #fff;
+  padding-top: 10px;
+} 
 
+p1{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+p1:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p1 a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: yellow; 
+    opacity: .5
+}
 /* Section/Article */
 
 	section.special, article.special {
@@ -187,53 +233,7 @@
 				header.major.last h2 {
 					margin-bottom: 1em;
 				} 
-body{
-  background: #fff;
-  padding-top: 10px;
-} 
 
-p1{
-  color: lime; 
-  font-family: "Courier";
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
-}
-
-p1:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-p1 a{
-  color: lime;
-  text-decoration: none;
-}
-
-span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: yellow; 
-    opacity: .5
-}
 
 	footer {
 		text-align: center;
