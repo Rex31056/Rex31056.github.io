@@ -553,31 +553,31 @@
 			}
 
 				#header nav li:nth-child(1) {
+					-moz-animation-delay: 2.6s;
+					-webkit-animation-delay: 2.6s;
+					-ms-animation-delay: 2.6s;
+					animation-delay: 2.6s;
+				}
+
+				#header nav li:nth-child(2) {
 					-moz-animation-delay: 2.5s;
 					-webkit-animation-delay: 2.5s;
 					-ms-animation-delay: 2.5s;
 					animation-delay: 2.5s;
 				}
 
-				#header nav li:nth-child(2) {
-					-moz-animation-delay: 2.75s;
-					-webkit-animation-delay: 2.75s;
-					-ms-animation-delay: 2.75s;
-					animation-delay: 2.75s;
-				}
-
 				#header nav li:nth-child(3) {
-					-moz-animation-delay: 3s;
-					-webkit-animation-delay: 3s;
-					-ms-animation-delay: 3s;
-					animation-delay: 3s;
+					-moz-animation-delay: 2.5s;
+					-webkit-animation-delay: 2.5s;
+					-ms-animation-delay: 2.5s;
+					animation-delay: 2.5s;
 				}
 
 				#header nav li:nth-child(4) {
-					-moz-animation-delay: 3.25s;
-					-webkit-animation-delay: 3.25s;
-					-ms-animation-delay: 3.25s;
-					animation-delay: 3.25s;
+					-moz-animation-delay: 2.6s;
+					-webkit-animation-delay: 2.6s;
+					-ms-animation-delay: 2.6s;
+					animation-delay: 2.6s;
 				}
 
 				#header nav li:nth-child(5) {
