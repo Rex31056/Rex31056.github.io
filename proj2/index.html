@@ -9,11 +9,11 @@
 <p><img src="assets/1_1_2.png" alt="1_1_2"></p>
 <h2 id="part-1-2-derivative-of-gaussian-dog-filter">Part 1.2: Derivative of Gaussian (DoG) Filter</h2>
 <p>We can improve the quality of the detected edges by denoising our input through the application of a gaussian filter. Here is the result after using a gaussian blur:</p>
-<p><img src="assets/1_2_2.png" alt="1_2_2"></p>
+<p><img src="assets/1_2_2.png" width=1500 alt="1_2_2"></p>
 <p>We can do the same thing with a single convolution instead by creating a derivative of gaussian filter. We do this by convolving the gaussian filter with D_x and D_y (our finite difference operators from before) Here is what the resulting DoG filters looks like: </p>
 <p><img src="assets/1_2_1.png" alt="1_2_1"></p>
 <p>I verify that I get the same result as before below, as convolution operations are considered commutative and associative:</p>
-<p><img src="assets/1_2_3.png" alt="1_2_3"></p>
+<p><img src="assets/1_2_3.png" width=1500 alt="1_2_3"></p>
 <h2 id="part-1-3-image-straightening">Part 1.3: Image Straightening</h2>
 <p>This part focuses on creating an algorithm to auto-straighten images. Statistically, straighter images have a preference for vertical and horizontal edges in most images (due to gravity!). </p>
 <p>The result of this section will be to maximize the number of vertical and horizontal edges. How this is achieved is by first rotating the input through a certain range of rotations. We then sample the middle 60% of the image and calculate the gradient angle of the gaussian blurred image using <code>arctan(dy/dx)</code>. </p>
