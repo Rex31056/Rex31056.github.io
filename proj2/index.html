@@ -56,22 +56,23 @@
 <p><img src="assets/2_2_4.png" alt="2_2_4"></p>
 <h2 id="part-2-3-gaussian-and-laplacian-stacks">Part 2.3: Gaussian and Laplacian Stacks</h2>
 <p>The Gaussian and Laplacian stacks represent incremental amounts of blurring. Each layer of the Gaussian stack is blurred more than the previous, and each layer of the Laplacian stack is the difference of the Gaussian stack at the current level and the one from the previous layer. Here are some results from Dali&#39;s painting:</p>
-<p><img src="assets/2_3_1.png" alt="2_3_1"></p>
-<p><img src="assets/2_3_2.png" alt="2_3_2"></p>
+
+<p><img src="assets/2_3_1.png" width=1500 alt="2_3_1"></p>
+<p><img src="assets/2_3_2.png"  width=1500 alt="2_3_2"></p>
 <p>The Gaussian and Laplacian stacks of a blended image from Part 2:</p>
-<p><img src="assets/2_3_3.png" alt="2_3_3"></p>
-<p><img src="assets/2_3_4.png" alt="2_3_4"></p>
+<p><img src="assets/2_3_3.png"  width=1500 alt="2_3_3"></p>
+<p><img src="assets/2_3_4.png"  width=1500 alt="2_3_4"></p>
 <h2 id="part-2-4-multiresolution-blending-a-k-a-the-oraple-">Part 2.4: Multiresolution Blending (a.k.a. the oraple!)</h2>
 <p>To perform image blending, a mask is used to differentiate the border between the two images. A gaussian stack is used on the mask to help smoothen the transitions between the two images. Two laplacian stacks, one for each input is needed. We use the following formula</p>
 <p><img src="https://piazza.com/redirect/s3?bucket=uploads&amp;prefix=paste%2Fjktvgyz2qiw5j6%2F3b5c64d52835ece1f4f99ab943180fc3358522e9cb628f0b03e782c95c27be84%2FScreen_Shot_2020-09-24_at_4.37.42_PM.png" alt="form"> </p>
 <p>to determine how to blend each image from the laplacian stacks, into one final laplacian stack. The layers of the final stack are combined to yield the blended images. Behold the oraple:</p>
-<p><img src="assets/2_4_1.png" alt="2_4_1"></p>
+<p><img src="assets/2_4_1.png"  width=1500 alt="2_4_1"></p>
 <p>More examples:</p>
-<p><img src="assets/2_4_2.png" alt="2_4_2"></p>
+<p><img src="assets/2_4_2.png"  width=1500 alt="2_4_2"></p>
 <p>For reference, here is what it looks like in each layer of the final laplacian stack:</p>
-<p><img src="assets/2_4_3.png" alt="2_4_3"></p>
+<p><img src="assets/2_4_3.png"  width=1500 alt="2_4_3"></p>
 <p>and let's end with a meme application of this hard work:</p>
-<p><img src="assets/2_4_4.png" alt="2_4_4"></p>
+<p><img src="assets/2_4_4.png"  width=1500 alt="2_4_4"></p>
 <h2 id="key-takeaways">Key Takeaways</h2>
 <p>It&#39;s very cool to implement the computational photography tools I often use when editing photos like smooth blending or masks. It gives me a good introduction to how software I previously saw to be like black boxes, like Photoshop are developed. </p>
 <p>I occasionally work on computer vision with ML applications, and this opportunity to understand how common library functions work has made me appreciate them in a new way.</p>
